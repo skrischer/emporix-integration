@@ -1,10 +1,10 @@
 import { sdk } from './__config__/sdk.config';
 
-describe('[Integration Boilerplate SDK][integration] exampleMethod', () => {
+describe('[Emporix SDK][integration] exampleMethod', () => {
   it('makes a request to the middleware', async () => {
     const EXPECTED_RESPONSE = {"data": "Hello, Vue Storefront Integrator!"};
 
-    const res = await sdk.boilerplate.exampleMethod({
+    const res = await sdk.emporix.exampleMethod({
       id: 1,
     });
 

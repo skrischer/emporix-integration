@@ -1,0 +1,1 @@
+export { default } from "file:///home/developer/IdeaProjects/emporix-integration/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

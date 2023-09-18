@@ -1,5 +1,5 @@
 {
-  "name": "@vue-storefront/integration-boilerplate-playground",
+  "name": "@medienwerft/emporix-playground",
   "private": true,
   "version": "0.1.0",
   "engines": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vue-storefront/middleware": "3.0.1",
-    "@vue-storefront/integration-boilerplate-api": "*",
+    "@medienwerft/emporix-api": "*",
     "cors": "^2.8.5"
   },
   "files": [

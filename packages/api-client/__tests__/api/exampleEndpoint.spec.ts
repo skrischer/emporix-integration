@@ -2,7 +2,7 @@
 // import { contextMock } from '../../__mocks__/context.mock';
 // import consola from 'consola';
 
-describe('[Integration Boilerplate API] exampleEndpoint', () => {
+describe('[Emporix API] exampleEndpoint', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });

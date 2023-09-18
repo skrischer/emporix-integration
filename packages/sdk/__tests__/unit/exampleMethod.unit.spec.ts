@@ -14,7 +14,7 @@ jest.mock('../../src/client', () => ({
 }));
 
 /** TESTS */
-describe('[Integration Boilerplate SDK][unit] exampleMethod', () => {
+describe('[Emporix SDK][unit] exampleMethod', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();

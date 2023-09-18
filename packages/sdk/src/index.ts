@@ -1,22 +1,22 @@
-import { boilerplateConnector } from './connector';
+import { emporixConnector } from './connector';
 import type { Options } from './types';
 import type { Module } from '@vue-storefront/sdk';
 
 /**
- * Boulerplate module type.
+ * Emporix module type.
  */
-export interface BoilerplateModuleType extends Module {
+export interface EmporixSdkModule extends Module {
   /**
-   * The connector of the Boilerplate module.
+   * The connector of the emporix module.
    */
-  connector: ReturnType<typeof boilerplateConnector>;
+  connector: ReturnType<typeof emporixConnector>;
 }
 
 /**
- * Boilerplate module.
+ * Emporix module.
  */
-export const boilerplateModule = (options: Options): BoilerplateModuleType => ({
-  connector: boilerplateConnector({
+export const emporixSdkModule = (options: Options): EmporixSdkModule => ({
+  connector: emporixConnector({
     apiUrl: options.apiUrl,
   }),
   utils: {},

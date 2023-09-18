@@ -1,8 +1,10 @@
 module.exports = {
   integrations: {
-    boilerplate: {
-      location: '@vue-storefront/integration-boilerplate-api/server',
-      configuration: {},
+    emporix: {
+      location: '@medienwerft/emporix-api/server',
+      configuration: {
+        apiUrl: 'http://localhost:8181/emporix',
+      },
     },
   },
 };

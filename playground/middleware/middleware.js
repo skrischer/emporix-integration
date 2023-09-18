@@ -15,6 +15,7 @@ const cors = require("cors");
   corsMiddleware.handle = cors({
     origin: [
       "http://localhost:3000",
+      "http://localhost:3001",
       ...(process.env.MIDDLEWARE_ALLOWED_ORIGINS?.split(",") ?? []),
     ],
     credentials: true,

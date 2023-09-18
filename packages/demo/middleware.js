@@ -5,7 +5,7 @@ const cors = require("cors");
 (async () => {
   const app = await createServer({ integrations });
   const host = process.argv[2] ?? "0.0.0.0";
-  const port = process.argv[3] ?? 8181;
+  const port = process.argv[3] ?? 8182;
   const CORS_MIDDLEWARE_NAME = "corsMiddleware";
 
   const corsMiddleware = app._router.stack.find(
@@ -15,6 +15,7 @@ const cors = require("cors");
   corsMiddleware.handle = cors({
     origin: [
       "http://localhost:3000",
+      "http://localhost:3001",
       ...(process.env.MIDDLEWARE_ALLOWED_ORIGINS?.split(",") ?? []),
     ],
     credentials: true,

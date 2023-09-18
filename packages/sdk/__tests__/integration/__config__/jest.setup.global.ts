@@ -2,8 +2,8 @@ import { createServer } from '@vue-storefront/middleware';
 
 const middlewareConfig = {
   integrations: {
-    boilerplate: {
-      location: '@vue-storefront/integration-boilerplate-api/server',
+    emporix: {
+      location: '@medienwerft/emporix-api/server',
       configuration: {},
     },
   }

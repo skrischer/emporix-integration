@@ -1,4 +1,4 @@
-import { BoilerplateIntegrationContext, TODO } from '..'
+import { EmporixIntegrationContext, TODO } from '..'
 
 /**
  * Definition of all API-client methods available in {@link https://docs.vuestorefront.io/v2/advanced/context.html#context-api | context}.
@@ -10,7 +10,8 @@ export interface Endpoints {
    * This description will appear in the API extractor, so try to document all endpoints added here.
    */
   exampleEndpoint(
-    context: BoilerplateIntegrationContext,
+    context: EmporixIntegrationContext,
     params: TODO
   ): Promise<TODO>;
+    getCart(context: EmporixIntegrationContext, params: TODO): Promise<TODO>;
 }

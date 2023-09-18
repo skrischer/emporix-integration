@@ -1,9 +1,9 @@
 import { initSDK, buildModule } from '@vue-storefront/sdk';
-import { boilerplateModule, BoilerplateModuleType } from '../../../src';
+import { emporixSdkModule, EmporixSdkModule } from '../../../src';
 
 const sdkConfig = {
-  boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
-    apiUrl: 'http://localhost:8181/boilerplate',
+  emporix: buildModule<EmporixSdkModule>(emporixSdkModule, {
+    apiUrl: 'http://localhost:8181/emporix',
   }),
 };
 
