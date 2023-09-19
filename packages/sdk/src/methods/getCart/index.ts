@@ -18,5 +18,5 @@ import { TODO } from '../../types';
  */
 export async function getCart() {
   const { data } = await client.post<TODO>('getCart');
-  return data.data;
+  return data;
 }

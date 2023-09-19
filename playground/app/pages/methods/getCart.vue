@@ -30,7 +30,7 @@ import "vue3-json-viewer/dist/index.css";
 const res = useState('waiting to call exampleMethod() ...');
 
 async function callEndpoint() {
-    const { data } = await sdk.emporix.getCart('test');
+    const { data } = await sdk.emporix.getCart();
     res.value = data
 }
 
